@@ -1,6 +1,6 @@
 # SOFTWARE DEVELOPMENT COURSES - LUT
 
-This is the frontend module for the software development courses offeref by Lappeenranta University of Technology (LUT), Finland.
+This is the frontend module for the software development courses offered by Lappeenranta University of Technology (LUT), Finland.
 
 ## Author
 
