@@ -1,7 +1,6 @@
 // import partials
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 // resets
 * {
@@ -10,7 +9,7 @@
 body {
     margin: 0;
     height: 100%;
-    color: #fff;
+    color: set-text-color($primary-color);
     line-height: 1.5;
     @include background;
     background-color: $primary-color;
@@ -78,3 +77,54 @@ main {
         }
     }
 }
+
+// about page
+.about-info {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'bioimage bio bio'
+        'job1 job2 job3';
+    grid-template-columns: repaat(3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid $secondary-color;
+    }
+    .bio {
+        grid-area: bio;
+    }
+    .job1 {
+        grid-area: job1;
+    }
+    .job2 {
+        grid-area: job2;
+    }
+    .job3 {
+        grid-area: job3;
+    }
+
+    .job {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: 5px solid $secondary-color;
+
+        h4 {
+            font-weight: 400;
+            font-size: 0.75rem;
+            margin-top: 0;
+        }
+    }
+}
+
+#main-footer {
+    text-align: center;
+    height: 60px;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+    background: darken($primary-color, 10);
+}
+
+@import 'mobile';

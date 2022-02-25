@@ -11,7 +11,7 @@
         height: 3px;
         width: 27px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
     &.close {
