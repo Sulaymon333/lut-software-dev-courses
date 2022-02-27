@@ -8,7 +8,8 @@ Visit - [Modern Portfolio with Sass](https://sulaymon333.github.io/lut-software-
 
 ## Demo Picture
 
-<p align="center"><img src="root/img/demo.png" alt="demo picture></p>
+<p align="center">
+<img src="root/img/demo.png" alt="demo picture"></p>
 
 ## Author
 
