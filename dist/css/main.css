@@ -272,7 +272,42 @@ main {
   color: #333;
   background: #c4c4c4; }
 
-/* line 166, scss/main.scss */
+/* line 167, scss/main.scss */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  /* line 174, scss/main.scss */
+  .boxes .box {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    /* line 180, scss/main.scss */
+    .boxes .box:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      /* line 185, scss/main.scss */
+      .boxes .box:hover span {
+        color: #000; }
+
+/* line 191, scss/main.scss */
+.social-media {
+  display: inline-block;
+  font-size: 0.7rem; }
+  /* line 195, scss/main.scss */
+  .social-media a {
+    margin-inline: 0.25rem; }
+    /* line 197, scss/main.scss */
+    .social-media a:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
+
+/* line 204, scss/main.scss */
 #main-footer {
   text-align: center;
   height: 60px;
