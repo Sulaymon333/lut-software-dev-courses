@@ -286,28 +286,28 @@ main {
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    /* line 180, scss/main.scss */
+    /* line 181, scss/main.scss */
     .boxes .box:hover {
       padding: 0.5rem 1.5rem;
       background: #eece1a;
       color: #000; }
-      /* line 185, scss/main.scss */
+      /* line 186, scss/main.scss */
       .boxes .box:hover span {
         color: #000; }
 
-/* line 191, scss/main.scss */
+/* line 192, scss/main.scss */
 .social-media {
   display: inline-block;
   font-size: 0.7rem; }
-  /* line 195, scss/main.scss */
+  /* line 196, scss/main.scss */
   .social-media a {
     margin-inline: 0.25rem; }
-    /* line 197, scss/main.scss */
+    /* line 198, scss/main.scss */
     .social-media a:hover {
       color: #eece1a;
       transition: all 0.5s ease-out; }
 
-/* line 204, scss/main.scss */
+/* line 205, scss/main.scss */
 #main-footer {
   text-align: center;
   height: 60px;
@@ -371,4 +371,8 @@ main {
     margin-top: 10vh; }
   /* line 77, scss/_mobile.scss */
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  /* line 81, scss/_mobile.scss */
+  .boxes .box {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem; } }
