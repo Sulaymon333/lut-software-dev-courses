@@ -231,7 +231,46 @@ main {
       font-size: 0.75rem;
       margin-top: 0; }
 
-/* line 122, scss/main.scss */
+/* line 123, scss/main.scss */
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); }
+  /* line 128, scss/main.scss */
+  .projects i {
+    font-size: 0.75rem; }
+  /* line 132, scss/main.scss */
+  .projects img {
+    width: 100%;
+    border: 3px solid #fff; }
+    /* line 136, scss/main.scss */
+    .projects img:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease-out;
+      border-color: #eece1a; }
+
+/* line 144, scss/main.scss */
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  /* line 149, scss/main.scss */
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+/* line 155, scss/main.scss */
+.btn-dark {
+  color: #fff;
+  background: black; }
+
+/* line 160, scss/main.scss */
+.btn-light {
+  color: #333;
+  background: #c4c4c4; }
+
+/* line 166, scss/main.scss */
 #main-footer {
   text-align: center;
   height: 60px;
@@ -239,44 +278,60 @@ main {
   color: #fff;
   background: #2b2b2b; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1171px) {
+  /* line 3, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   /* line 9, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 768px) {
+  /* line 15, scss/_mobile.scss */
   main {
     align-items: center;
     text-align: center; }
-  /* line 14, scss/_mobile.scss */
+  /* line 20, scss/_mobile.scss */
   .hero-text h1 {
     line-height: 1;
     margin-bottom: 1rem; }
-  /* line 21, scss/_mobile.scss */
+  /* line 27, scss/_mobile.scss */
   .nav-menu .branding,
   .nav-menu .nav-list {
     float: none;
     width: 100%;
     min-height: 0%; }
-  /* line 27, scss/_mobile.scss */
+  /* line 33, scss/_mobile.scss */
   .nav-menu.show {
     transform: translate3d(0, 0, 0); }
-  /* line 31, scss/_mobile.scss */
+  /* line 37, scss/_mobile.scss */
   .nav-menu .nav-list {
     height: 75vh;
     font-size: 24px;
     transform: translate3d(-100%, 0, 0); }
-  /* line 36, scss/_mobile.scss */
+  /* line 42, scss/_mobile.scss */
   .nav-menu .branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
-    /* line 40, scss/_mobile.scss */
+    /* line 46, scss/_mobile.scss */
     .nav-menu .branding .portrait {
       background: url("../img/portrait_small.jpg") no-repeat center center;
       width: 150px;
       height: 150px; }
-  /* line 48, scss/_mobile.scss */
+  /* line 54, scss/_mobile.scss */
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  /* line 65, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  /* line 62, scss/_mobile.scss */
+  /* line 72, scss/_mobile.scss */
   .hero-text h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  /* line 77, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: 1fr; } }
