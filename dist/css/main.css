@@ -130,7 +130,9 @@ body {
   body#bg-img {
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
     /* line 21, scss/_config.scss */
     body#bg-img:after {
       content: '';

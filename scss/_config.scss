@@ -15,8 +15,8 @@ $home-image: url(../img/background.jpg);
             background-image: $home-image;
             background-attachment: fixed;
             background-size: cover;
-            // background-position: center;
-            // background-repeat: no-repeat;
+            background-position: center;
+            background-repeat: no-repeat;
 
             &:after {
                 content: '';
